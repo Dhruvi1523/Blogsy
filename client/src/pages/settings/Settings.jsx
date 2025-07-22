@@ -14,7 +14,7 @@ export default function Setting() {
   const [success, setSuccess] = useState(false);
 
   const {user, dispatch} = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://blogsy-jb29.onrender.com/images/"
 
   const handleSubmit = async(e) => {
     e.preventDefault();
