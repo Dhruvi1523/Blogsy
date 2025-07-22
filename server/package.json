@@ -17,7 +17,7 @@
     "start": "node index.js",
     "dev" : "nodemon index.js"
   },
-  "proxy": "https://blogsy-1-vbnb.onrender.com/",
+  "proxy": "https://blogsy-jb29.onrender.com",
   "author": "",
   "license": "ISC",
   "description": ""
