@@ -1,0 +1,206 @@
+.singlePost {
+    padding: 2rem;
+    background-color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.postWrapper {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.postImageContainer {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.singlePostImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.postHeader {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.singlePostTitle {
+    font-size: 2rem; /* 32px */
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singlePostEdit {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.singlePostIcon {
+    font-size: 1.25rem; /* 20px */
+    color: #666666;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.singlePostIcon:hover {
+    color: #000000;
+}
+
+.singlePostTitleInput {
+    width: 90%;
+    padding: 1rem;
+    font-size: 2rem; /* 32px */
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.singlePostTitleInput::placeholder {
+    color: #999999;
+}
+
+.singlePostTitleInput:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.singlePostInfo {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.singlePostAuthor {
+    font-size: 1rem; /* 16px */
+    color: #666666;
+    font-family: 'Inter', sans-serif;
+}
+
+.singlePostDate {
+    font-size: 0.875rem; /* 14px */
+    color: #666666;
+    font-family: 'Inter', sans-serif;
+}
+
+.singlePostCats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 1rem 0;
+}
+
+.singlePostCat {
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem; /* 14px */
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+.singlePostDesc {
+    padding: 1rem;
+    font-size: 1.125rem; /* 18px */
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+.singlePostDescInput {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+    font-size: 1.125rem; /* 18px */
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+    transition: all 0.2s ease;
+}
+
+.singlePostDescInput::placeholder {
+    color: #999999;
+}
+
+.singlePostDescInput:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.singlePostButton {
+    padding: 0.8rem 1.8rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    align-self: flex-end;
+    margin: 0 1rem 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.singlePostButton:hover {
+    background-color: #666666;
+}
+
+.singlePostButton:active {
+    background-color: #333333;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 768px) {
+    .postWrapper {
+        max-width: 100%;
+    }
+
+    .postImageContainer {
+        height: 200px;
+    }
+
+    .singlePostTitle {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .singlePostTitleInput {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .singlePostDesc {
+        font-size: 1rem; /* 16px */
+    }
+
+    .singlePostDescInput {
+        font-size: 1rem; /* 16px */
+        height: 200px;
+    }
+}

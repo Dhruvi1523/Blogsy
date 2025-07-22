@@ -1,0 +1,27 @@
+.single {
+    padding: 2rem;
+    background-color: #ffffff;
+    min-height: 80vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.singlePost {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .single {
+        padding: 1rem;
+    }
+
+    .singlePost {
+        padding: 0.5rem;
+    }
+}

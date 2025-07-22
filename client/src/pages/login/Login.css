@@ -1,0 +1,103 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff; /* Pure white */
+}
+
+.loginTitle {
+    font-size: 50px;
+    color: #111111; /* Almost black */
+    font-family: 'Lora', serif;
+}
+
+.loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* background: #f8f8f8; Light gray background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* border: 1px solid #e5e5e5; */
+}
+
+.loginForm label {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333333; /* Dark gray */
+    font-family: 'Lora', serif;
+}
+
+.loginForm input {
+    border-bottom: 1px solid #cccccc;
+    font-size: 15px;
+    color: #111111;
+    background-color: transparent;
+    padding: 10px 0;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.loginForm input:hover,
+.loginForm input:focus {
+    border-bottom-color: #000000;
+}
+
+.loginInput {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #111111;
+}
+
+.loginButton {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 240px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:disabled {
+    cursor: not-allowed;
+    background-color: #999999;
+}
+
+.loginButton:hover:not(:disabled) {
+    background-color: #000000;
+    transform: translateY(-2px);
+}
+
+.loginRegister {
+    position: absolute;
+    top: 120px;
+    right: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid #111111;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.loginRegister:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transform: translateY(-2px);
+}

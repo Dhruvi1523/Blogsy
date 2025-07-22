@@ -1,0 +1,81 @@
+.explore {
+    padding: 2rem;
+    background-color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.exploreFilter {
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.exploreInput {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+    width: 200px;
+}
+
+.exploreInput::placeholder {
+    color: #999999;
+}
+
+.exploreInput:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.explorePosts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.exploreNoPosts {
+    color: #666666;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 768px) {
+    .explore {
+        padding: 1rem;
+    }
+
+    .exploreFilter {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .exploreInput {
+        width: 100%;
+    }
+
+    .explorePosts {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+}

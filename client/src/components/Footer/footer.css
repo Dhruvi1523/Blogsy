@@ -1,0 +1,91 @@
+.footer {
+    background-color: #000000;
+    border-top: 2px solid #333333;
+    padding: 2.5rem 0; /* 40px */
+}
+
+.footer__container {
+    padding: 0 1.25rem; /* 20px */
+    max-width: 75rem; /* 1200px */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem; /* 20px */
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 12.5rem; /* 200px */
+    text-align: center;
+}
+
+.footer__title {
+    color: #ffffff;
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.625rem; /* 10px */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 0.625rem; /* 10px */
+}
+
+.footer__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+    color: #cccccc;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem; /* 15px */
+    padding-top: 0.625rem; /* 10px */
+}
+
+.footer__social-link {
+    font-size: 1.5rem; /* 24px */
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.footer__social-link:hover {
+    color: #cccccc;
+}
+
+.footer__copy {
+    display: block;
+    margin-top: 1.25rem; /* 20px */
+    color: #999999;
+    font-size: 0.875rem; /* 14px */
+    font-family: 'Inter', sans-serif;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__section {
+        margin: 0.9375rem 0; /* 15px */
+    }
+    .footer__social {
+        padding-top: 0.9375rem; /* 15px */
+    }
+    .footer__copy {
+        margin-top: 0.9375rem; /* 15px */
+    }
+}
