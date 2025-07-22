@@ -17,7 +17,7 @@
     "start": "node index.js",
     "dev" : "nodemon index.js"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://blogsy-1-vbnb.onrender.com/",
   "author": "",
   "license": "ISC",
   "description": ""
