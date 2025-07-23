@@ -42,7 +42,7 @@ export default function Write() {
         setError(null);
 
         try {
-            const response = await axios.get("/posts/suggestions?prompt=" + aiTopic.trim());
+            const response = await axios.get("/server/posts/suggestions?prompt=" + aiTopic.trim());
             const aiData = JSON.parse(response.data.response);
 
             if (!aiData || typeof aiData !== "object") {
@@ -80,14 +80,14 @@ export default function Write() {
             data.append("file", file);
             newPost.photo = filename;
             try {
-                await axios.post("/upload", data);
+                await axios.post("/server/upload", data);
             } catch (error) {
                 console.error("File upload error:", error);
             }
         }
         try {
-            const res = await axios.post("/posts", newPost);
-            window.location.replace("/post/" + res.data._id);
+            const res = await axios.post("/server/posts", newPost);
+            window.location.replace("/server/post/" + res.data._id);
         } catch (error) {
             console.error("Post submission error:", error);
         }

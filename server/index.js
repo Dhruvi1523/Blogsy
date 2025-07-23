@@ -10,6 +10,7 @@ const aiRoutes = require("./routes/ai");
 const multer = require("multer");
 const path = require("path");
 const PORT =  5000
+const cors = require("cors")
 
 
 // Load environment variables from a .env file
@@ -50,6 +51,10 @@ app.post("/server/upload", upload.single("file"), (req, res) => {
     res.status(200).json("File has been uploaded");
 });
 
+app.use(cors({
+    origin:"https://blogsy-1-vbnb.onrender.com/",
+    withCredentials: true
+}))
 
 // JSON requests
 // app.use(express.json());
