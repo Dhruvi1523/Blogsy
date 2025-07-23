@@ -51,10 +51,13 @@ app.post("/server/upload", upload.single("file"), (req, res) => {
     res.status(200).json("File has been uploaded");
 });
 
+const cors = require("cors");
+
 app.use(cors({
-    origin:"https://blogsy-1-vbnb.onrender.com/",
-    withCredentials: true
-}))
+  origin: "https://blogsy-1-vbnb.onrender.com", 
+  credentials: true 
+}));
+
 
 // JSON requests
 // app.use(express.json());
