@@ -69,6 +69,10 @@ app.use("/server/posts", postRoute);
 app.use("/server/categories", categoryRoute);
 app.use("/server/ai" , aiRoutes)
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 // start the server
 app.listen(PORT, () => {
     console.log(`Backend is running on port ${PORT}`);
