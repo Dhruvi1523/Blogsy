@@ -11,7 +11,7 @@ export default function Explore() {
         const fetchPosts = async () => {
             try {
                 const query = new URLSearchParams(filter).toString();
-                const res = await axios.get(`/posts?${query}`);
+                const res = await axios.get(`https://blogsy-jb29.onrender.com/server/posts?${query}`);
                 setPosts(res.data);
             } catch (error) {
                 console.error("Error fetching posts:", error);

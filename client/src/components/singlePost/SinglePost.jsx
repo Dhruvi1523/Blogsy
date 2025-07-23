@@ -20,7 +20,7 @@ export default function SinglePost() {
     useEffect(() => {
         const getPost = async () => {
             try {
-                const res = await axios.get("/server/posts/" + path);
+                const res = await axios.get("https://blogsy-jb29.onrender.com/server/posts/" + path);
                 setPost(res.data);
                 setTitle(res.data.title);
                 setDesc(res.data.desc);

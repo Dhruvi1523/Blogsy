@@ -16,7 +16,7 @@ export default function LOgin() {
     e.preventDefault();
     dispatch({type: "LOGIN_START"}); 
     try {
-      const res = await axios.post("/server/auth/login", {
+      const res = await axios.post("https://blogsy-jb29.onrender.com/server/auth/login", {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });

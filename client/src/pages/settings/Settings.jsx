@@ -32,13 +32,13 @@ export default function Setting() {
         data.append("file", file);
         updatedUser.profilePic = filename;
         try {
-            await axios.post("/server/upload", data);
+            await axios.post("https://blogsy-jb29.onrender.com/server/upload", data);
         } catch (error) {
             console.error("File upload error:", error);
         }
     }
     try {
-        const res = await axios.put("/server/users/" + user._id, updatedUser);
+        const res = await axios.put("https://blogsy-jb29.onrender.com/server/users/" + user._id, updatedUser);
         setSuccess(true);
         dispatch({type: "UPDATE_SUCCESS", payload: res.data});
     } catch (error) {
